@@ -45,7 +45,7 @@ testou.
 - [Classificar divergência em conciliação](analise/classificar-divergencia.md)
 
 ### Escrita
-- [Estruturar documentação de processo](escrita/documentar-processo.md)
+- [Revisar texto](escrita/documentar-processo.md)
 
 ### Código
 - [Revisar script antes de publicar](codigo/revisar-script.md)
