@@ -5,7 +5,7 @@
 **Modelo:** ChatGPT-6 Luna
 <br>
 <br>
-**Data da execução:** 18/11/2026
+**Data da execução:** 03/11/2026
 <br>
 <br>
 **Base:** script Python de 36 linhas que calcula parcelas com taxa, mais três contratos de exemplo. Idêntico nos dois prompts.
