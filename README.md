@@ -68,4 +68,4 @@ parte da URL.
 
 Todos foram escritos para resolver tarefas de análise de processos,
 documentação e revisão de código em ambiente corporativo. Os exemplos dentro
-das entradas usam dados fictícios.
+dos arquivos usam dados fictícios.
