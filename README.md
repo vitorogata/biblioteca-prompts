@@ -49,7 +49,7 @@ Todo arquivo desta biblioteca segue essa mesma estrutura.
 
 ### Prompt de análise de dados
 
-- [Classificar divergência em conciliação](https://github.com/vitorogata/biblioteca-testes-prompts/blob/main/analise/classificar-divergencia.md)
+- [Analisar tempo de atendimento](https://github.com/vitorogata/biblioteca-testes-prompts/blob/main/analise/analisar-tempo-atendimento.md)
 
 ### Prompt de revisão de texto
 
