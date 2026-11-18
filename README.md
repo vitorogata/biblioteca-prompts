@@ -21,18 +21,19 @@ Cinco coisas, nesta ordem de importância:
 - **Restrição negativa**: incluo o que o modelo não deve fazer, porque é ali
   que a maioria dos erros aparece.
 
-## Os cinco campos de cada entrada
+## Os seis campos de cada arquivo
 
-Toda entrada da biblioteca segue o mesmo formato:
+Todo arquivo desta biblioteca segue o mesmo formato:
 
 1. **Problema e quando usar**: o que a entrada resolve e em que situação ela
    faz sentido.
 2. **Entrada e saída esperada**: o que o prompt recebe e qual formato devolve.
-3. **Por que está estruturado assim**: a decisão por trás de cada bloco do
+3. **O prompt**: texto na íntegra.
+4. **Por que está estruturado assim**: a decisão por trás de cada bloco do
    prompt.
-4. **Modo de falha conhecido**: o que faz essa entrada produzir resultado ruim,
+5. **Modo de falha conhecido**: o que faz essa entrada produzir resultado ruim,
    e como perceber isso rápido.
-5. **Versão anterior que não funcionou**: quando existe, o que tentei antes e
+6. **Versão anterior que não funcionou**: quando existe, o que tentei antes e
    por que abandonei.
 
 O quarto e o quinto campos são o motivo desta biblioteca existir. Prompt que
