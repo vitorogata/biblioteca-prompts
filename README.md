@@ -55,8 +55,7 @@ testou.
 Entra: prompt que usei em trabalho real, com o raciocínio documentado.
 
 Não entra: prompt que só funciona citando nome de sistema interno, trecho de
-base real ou dado de cliente. Se depende desse contexto, ele não é publicável
-aqui, mesmo que seja o melhor prompt que eu tenho.
+base real ou dado de cliente. 
 
 ## Convenção de nomes
 
