@@ -1,6 +1,6 @@
 # Biblioteca de Prompts
 
-Prompts que uso no trabalho, documentados com a decisão por trás de cada um e
+Prompts que uso no trabalho, documentados com a decisão por trás e
 com o modo de falha conhecido de cada um.
 
 Não é uma lista de comandos prontos. Cada entrada existe porque resolveu um
