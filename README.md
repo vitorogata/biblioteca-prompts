@@ -1,10 +1,13 @@
 # Biblioteca de testes de prompts
 
-Prompts que uso no trabalho, documentados com a decisão por trás e
-com o modo de falha conhecido de cada um.
+Prompts que uso no trabalho, documentados com a decisão por trás e com o modo
+de falha conhecido de cada um.
 
-Não é uma lista de comandos prontos. Cada entrada existe porque resolveu um
-problema real, e registra também o que não funcionou.
+Não é uma lista de comandos prontos. Cada arquivo registra um teste: o prompt
+que falhou, o que ele devolveu, o prompt corrigido e o que ele devolveu. Quem
+lê vê a relação entre a decisão de escrita e a qualidade da saída.
+
+<br>
 
 ## O que considero um prompt bem estruturado
 
@@ -21,48 +24,42 @@ Cinco coisas, nesta ordem de importância:
 - **Restrição negativa**: incluo o que o modelo não deve fazer, porque é ali
   que a maioria dos erros aparece.
 
-## Os seis campos de cada arquivo
+<br>
 
-Todo arquivo desta biblioteca segue o mesmo formato:
+## Os dez campos de cada arquivo
 
-1. **Problema e quando usar**: o que a entrada resolve e em que situação ela
-   faz sentido.
-2. **Entrada e saída esperada**: o que o prompt recebe e qual formato devolve.
-3. **O prompt**: texto na íntegra.
-4. **Por que está estruturado assim**: a decisão por trás de cada bloco do
-   prompt.
-5. **Modo de falha conhecido**: o que faz essa entrada produzir resultado ruim,
-   e como perceber isso rápido.
-6. **Versão anterior que não funcionou**: quando existe, o que tentei antes e
-   por que abandonei.
+Todo arquivo desta biblioteca segue essa mesma estrutura.
 
-O quarto e o quinto campos são o motivo desta biblioteca existir. Prompt que
-funcionou uma vez qualquer pessoa publica. O que quebrou ele é registro de quem
-testou.
+1. **Identificação do teste**: modelo e versão, data da última execução, base
+   usada e a variável que foi alterada entre as duas versões do prompt.
+2. **Problema e quando usar**: o que resolve e em que situação faz sentido.
+3. **Entrada e saída esperadas**: o que o prompt recebe e o formato que
+   deveria devolver.
+4. **O prompt que falhou**: texto literal da versão abandonada.
+5. **Saída do prompt que falhou**: transcrição do que ele devolveu.
+6. **O prompt corrigido**: texto literal da versão atual, para copiar.
+7. **Saída do prompt corrigido**: transcrição do que ele devolveu.
+8. **Por que ficou estruturado assim**: a decisão por trás de cada bloco.
+9. **Modo de falha conhecido**: onde ainda quebra, como perceber, com trecho.
+10. **Conclusão**: a regra geral que vale para outros prompts.
+
+<br>
 
 ## Índice
 
-### Análise
-- [Classificar divergência em conciliação](analise/classificar-divergencia.md)
+### Prompt de análise de dados
 
-### Escrita
-- [Revisar texto](escrita/revisar-texto.md)
+- [Classificar divergência em conciliação](https://github.com/vitorogata/biblioteca-testes-prompts/blob/main/analise/classificar-divergencia.md)
 
-### Código
-- [Revisar script antes de publicar](codigo/revisar-script.md)
+### Prompt de revisão de texto
 
-## O que entra e o que não entra
+- [Revisar texto](https://github.com/vitorogata/biblioteca-testes-prompts/blob/main/escrita/revisar-texto.md)
 
-Entra: prompt que usei em trabalho real, com o raciocínio documentado.
+### Prompt de revisão de código
 
-Não entra: prompt que só funciona citando nome de sistema interno, trecho de
-base real ou dado de cliente. 
+- [Revisar script antes de publicar](https://github.com/vitorogata/biblioteca-testes-prompts/blob/main/codigo/revisar-script.md)
 
-## Convenção de nomes
-
-Pastas por área de uso (`analise`, `escrita`, `codigo`), um arquivo por prompt,
-nome em minúsculas com hífen. Sem acento no nome do arquivo, porque ele vira
-parte da URL.
+<br>
 
 ## Origem dos prompts
 
