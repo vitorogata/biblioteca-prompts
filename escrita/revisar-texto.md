@@ -1,5 +1,6 @@
 # Revisar texto
 
+## Identificação do teste
 ## Problema e quando usar
 
 Peço revisão para IA e recebo um texto melhor escrito que não parece meu:
@@ -9,7 +10,7 @@ para texto genérico, não para currículo nem para mensagem que eu assino.
 Uso este prompt quando o texto precisa melhorar sem perder a característica
 que faz ele parecer escrito por uma pessoa.
 
-## Entrada e saída esperada
+## Entrada e saída esperadas
 
 Entrada: o texto e o contexto de uso, como currículo, mensagem ou
 documentação técnica.
@@ -17,9 +18,35 @@ documentação técnica.
 Saída: o texto revisado, seguido de uma lista curta do que mudou e por quê,
 com o trecho original ao lado.
 
-## O prompt
+## O prompt que falhou
 
-    Revise o texto abaixo para [contexto de uso].
+    Melhore este texto para o resumo do meu perfil no LinkedIn.
+
+    Texto:
+    
+    Entrei na UFABC pensando em projeto mecânico e saí interessado em processo. No
+    meio do curso de Engenharia de Gestão comecei a gostar mais de organizar fluxo e
+    dado do que de desenhar peça, e hoje é isso que eu faço: análise de processos,
+    documentação e, mais recentemente, conciliação de dados com Python. Gosto de
+    pegar processo bagunçado e deixar ele com regra escrita, do jeito que a próxima
+    pessoa consegue repetir sem me chamar. Aprendi Python sozinho, na maior parte
+    resolvendo problema que apareceu no trabalho. Não tenho certificação nenhuma de
+    programação, o que eu tenho é script que roda.
+
+
+## Saída do prompt que falhou
+
+    Minha trajetória na UFABC começou com interesse em projetos mecânicos, mas, ao longo 
+    do curso de Engenharia de Gestão, descobri que me identificava mais com processos e dados.
+    Hoje, trabalho com análise de processos, documentação e conciliação de dados com Python.
+    Gosto de organizar processos complexos e transformá-los em rotinas claras, documentadas e 
+    replicáveis, para que outras pessoas consigam executá-las com autonomia. Aprendi Python 
+    de forma autodidata, resolvendo demandas reais do trabalho e desenvolvendo scripts 
+    para problemas concretos.
+
+## O prompt corrigido
+
+    Revise o texto abaixo para o resumo do meu perfil no LinkedIn.
 
     Regras:
     - Mantenha o tamanho aproximado. Se precisar cortar, corte redundância,
@@ -34,7 +61,34 @@ com o trecho original ao lado.
     que mudou e o motivo.
 
     Texto:
-    [colar]
+    Entrei na UFABC pensando em projeto mecânico e saí interessado em processo. No
+    meio do curso de Engenharia de Gestão comecei a gostar mais de organizar fluxo e
+    dado do que de desenhar peça, e hoje é isso que eu faço: análise de processos,
+    documentação e, mais recentemente, conciliação de dados com Python. Gosto de
+    pegar processo bagunçado e deixar ele com regra escrita, do jeito que a próxima
+    pessoa consegue repetir sem me chamar. Aprendi Python sozinho, na maior parte
+    resolvendo problema que apareceu no trabalho. Não tenho certificação nenhuma de
+    programação, o que eu tenho é script que roda.
+
+## Saída do prompt corrigido
+
+    Entrei na UFABC pensando em projeto mecânico e saí interessado em processo. No meio do curso de Engenharia de Gestão, comecei a gostar mais de organizar fluxo e dado do que de desenhar peça. Hoje, é isso que faço: análise de processos, documentação e, mais recentemente, conciliação de dados com Python. Gosto de pegar processo bagunçado e deixar ele com regra escrita, de um jeito que a próxima pessoa consiga repetir sem me chamar. Aprendi Python sozinho, na maior parte das vezes resolvendo problemas que apareceram no trabalho. Não tenho certificação nenhuma de programação. O que eu tenho é script que roda.
+
+    • Original: “No meio do curso de Engenharia de Gestão comecei...”
+     Mudou: Acrescentei uma vírgula após “Gestão”.
+     Motivo: Separar a expressão inicial e facilitar a leitura.
+    • Original: “..., e hoje é isso que eu faço:”
+     Mudou: Separei em duas frases: “... de desenhar peça. Hoje, é isso que faço:”
+     Motivo: Deixar a frase mais direta e curta.
+    • Original: “do jeito que a próxima pessoa consegue repetir”
+     Mudou: “de um jeito que a próxima pessoa consiga repetir”
+     Motivo: Ajustar a construção sem mudar a ideia.
+    • Original: “na maior parte resolvendo problema que apareceu no trabalho”
+     Mudou: “na maior parte das vezes resolvendo problemas que apareceram no trabalho”
+     Motivo: Ajustar a expressão e a concordância.
+    • Original: “Não tenho certificação nenhuma de programação, o que eu tenho é script que roda.”
+     Mudou: Dividi em duas frases.
+     Motivo: Evitar a junção de duas orações independentes e preservar o fechamento enfático.
 
 ## Por que está estruturado assim
 
@@ -59,7 +113,7 @@ Quando o texto já está bom, ele mexe só para justificar a tarefa. Se a lista
 de mudanças vier com itens triviais do tipo "troquei por um sinônimo", é sinal
 de que o original estava pronto.
 
-## Versão anterior que não funcionou
+## Conclusão
 
 A primeira versão dizia "melhore este texto". Ela devolvia versão mais formal,
 mais longa e com adjetivo que eu não tinha escrito. O que faltou foi a
