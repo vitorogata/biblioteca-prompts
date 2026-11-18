@@ -1,4 +1,4 @@
-# Revisar texto mantendo a voz do autor
+# Revisar texto
 
 ## Problema e quando usar
 
