@@ -1,4 +1,4 @@
-# Biblioteca de Prompts
+# Biblioteca de testes de prompts
 
 Prompts que uso no trabalho, documentados com a decisão por trás e
 com o modo de falha conhecido de cada um.
